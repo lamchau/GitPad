@@ -22,12 +22,12 @@ namespace Gitpad
     {
         public static int Main(string[] args)
         {
-            if (IsProcessElevated())
-            {
-                MessageBox.Show("Run this application as a normal user (not as Elevated Administrator)",
-                                "App is Elevated", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1;
-            }
+            ////if (IsProcessElevated())
+            ////{
+            ////    MessageBox.Show("Run this application as a normal user (not as Elevated Administrator)",
+            ////                    "App is Elevated", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            ////    return -1;
+            ////}
 
             int ret = 0;
             if (args.Length == 0)
